@@ -93,7 +93,6 @@ public class NumberTriangle {
     public int retrieve(String path) {
 
         int rtn = -1;
-
         if (path.isEmpty()) {
             return getRoot();
             }
@@ -149,6 +148,7 @@ public class NumberTriangle {
             // ok great now we have an ArrayList of the numbers in that line as ints supposedly
 
             for (int i = 0; i < numbers.size(); i++) {
+                // this had to be numbers.size() not current.size()
                 int this_num = (int) numbers.get(i);
                 NumberTriangle this_numtri = new NumberTriangle(this_num);
                 // we have our number triangle with the root
@@ -166,7 +166,7 @@ public class NumberTriangle {
                 current.add(this_numtri); // add your numbertree to current
             }
 
-            //read the next line
+            // read the next line
             line = br.readLine();
 
             past = current; // once it's through the whole line it'll replace the last row with the new row

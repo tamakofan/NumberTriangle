@@ -165,7 +165,7 @@ public class NumberTriangle {
                 current.add(this_numtri); // add your numbertree to current
             }
 
-            //read the next line
+            // read the next line
             line = br.readLine();
 
             past = current; // once it's through the whole line it'll replace the last row with the new row

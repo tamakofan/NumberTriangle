@@ -148,9 +148,6 @@ public class NumberTriangle {
             }
             // ok great now we have an ArrayList of the numbers in that line as ints supposedly
 
-            // remove when done; this line is included so running starter code prints the contents of the file
-            // System.out.println(line);
-
             for (int i = 0; i < numbers.size(); i++) {
                 int this_num = (int) numbers.get(i);
                 NumberTriangle this_numtri = new NumberTriangle(this_num);

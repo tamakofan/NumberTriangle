@@ -95,7 +95,6 @@ public class NumberTriangle {
         int rtn = -1;
 
         if (path.isEmpty()) {
-            rtn = getRoot();
             return getRoot();
             }
 

@@ -148,6 +148,7 @@ public class NumberTriangle {
             // ok great now we have an ArrayList of the numbers in that line as ints supposedly
 
             for (int i = 0; i < numbers.size(); i++) {
+                // this had to be numbers.size() not current.size()
                 int this_num = (int) numbers.get(i);
                 NumberTriangle this_numtri = new NumberTriangle(this_num);
                 // we have our number triangle with the root
